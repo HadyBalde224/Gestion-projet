@@ -26,4 +26,10 @@ public class PersonnageTest {
         // Assert
         assertEquals(Orientation.SUD, resultat);
     }
+    @Test
+    void testTourner3DepuisNord() {
+        Personnage personnage = new Personnage();
+        Orientation resultat = personnage.tourner(3);
+        assertEquals(Orientation.OUEST, resultat);
+    }
 }
