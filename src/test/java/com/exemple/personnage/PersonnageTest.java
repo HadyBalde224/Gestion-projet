@@ -15,4 +15,15 @@ public class PersonnageTest {
         // Assert
         assertEquals(Orientation.EST, resultat);
     }
+    @Test
+    void testTourner2DepuisNord() {
+        // Arrange
+        Personnage personnage = new Personnage();
+
+        // Act
+        Orientation resultat = personnage.tourner(2);
+
+        // Assert
+        assertEquals(Orientation.SUD, resultat);
+    }
 }
